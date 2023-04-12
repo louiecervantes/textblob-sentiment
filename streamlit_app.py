@@ -17,10 +17,10 @@ def getPolarity(text):
 def getAnalysis(score):
     if score < 0:
         return ‘Negative’
-elif score == 0:
-    return ‘Neutral’
-else:
-    return ‘Positive’
+    elif score == 0:
+        return ‘Neutral’
+    else:
+        return ‘Positive’
     
 def app():
     st.title('Simple TextBlob Sentiment Demo')
