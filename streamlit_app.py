@@ -36,8 +36,8 @@ def app():
     if st.button("Get sentiment"):
         polarity = getPolarity(user_input)
         st.write('Polarity: ' + str(polarity))
-        st.write('Subjectivity: ' + getSubjectivity(user_input))
-        st.write('Sentiment: ' + getAnalysis(polarity))
+        st.write('Subjectivity: ' + str(getSubjectivity(user_input)))
+        st.write('Sentiment: ' + str(getAnalysis(polarity)))
 # run the app
 if __name__ == "__main__":
     app()
