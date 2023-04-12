@@ -16,7 +16,7 @@ def getPolarity(text):
 
 def getAnalysis(score):
     if score < 0:
-        return 'egative'
+        return 'Negative'
     elif score == 0:
         return 'Neutral'
     else:
